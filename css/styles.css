@@ -1,0 +1,139 @@
+/* 
+bg color: f5f5f5
+engraving: #111
+p: #333
+H: #000
+links: #1275cb
+footer: 86868b
+
+small font ======
+engrave: 20px
+wrap it up: 40px
+make: 20px
+link: 20px
+footer: 12px
+
+large font ======
+engrave: 24px
+wrap: 66px
+make: 22px
+link 22px
+footer: 12px
+*/
+
+:root {
+  --base-font: 16px;
+  --color-black: #000;
+  --color-gray-1: #111;
+  --color-gray-2: #333;
+  --color-gray-3: #86868b;
+  --color-gray-4: #d0d0d0;
+  --color-blue: #1275cb;
+  --color-white-1: #f5f5f5;
+
+  
+  --font-mob-lg: 5rem;
+  --font-mob-md: 1.875rem;
+  --font-mob-sm: 15px;
+ 
+  --font-desk-xlg: 66px;
+  --font-desk-lg: 24px;
+  --font-desk-md: 22px;
+  --font-desk-sm: 15px;
+}
+
+body { 
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--base-font);
+  background-color: var(--color-white-1);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+hr { 
+  background-color: var(--color-gray-4); 
+  opacity: 0.5;
+  height: 1px;
+  margin-bottom: 5rem;
+}
+
+.page-title {
+  color: var(--main-title-color);
+  font-size: var(--font-mob-md);
+}
+
+h2 {
+  color: var(--color-black);
+  font-size: var(--font-mob-lg);
+  /* font-size: 80px;  */
+  margin: 30px;
+  /* font-size: 60px; */
+}
+
+p { 
+  color: var(--color-gray-2);
+  font-size: var(--font-mob-md);
+  margin: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: var(--font-mob-md); 
+  padding: 0; 
+  margin: 25px 30px; 
+}
+
+ul a {
+  padding: 5px; 
+  display: block; 
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+a:link,
+a:visited {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+footer p {
+  color: var(--color-gray-3);
+  font-size: var(--font-mob-sm);
+}
+
+@media only screen and (min-width: 751px) {
+  .container {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    width: 70vw;
+    object-fit: cover;
+  }
+
+  ul li {
+    float: left;
+  }
+
+}
